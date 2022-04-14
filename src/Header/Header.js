@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Container from "../UI/Container";
 import { RiFacebookFill, RiTwitterFill, RiInstagramLine } from "react-icons/ri";
@@ -19,40 +20,40 @@ const Header = () => {
         <nav className={navExpand ? "nav nav--active" : "nav"} id="nav">
           <ul className="nav__list">
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="/" className="nav__link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="/" className="nav__link">
                 Recipes
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="/" className="nav__link">
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="/" className="nav__link">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="/about" className="nav__link">
                 About Us
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
         <div className={navExpand ? "header__social header__social--active" : "header__social"} id="headerSocial">
-          <a href="#" className="header__social-link">
+          <a href="facebook.com" className="header__social-link">
             <RiFacebookFill />
           </a>
-          <a href="#" className="header__social-link">
+          <a href="twitter.com" className="header__social-link">
             <RiTwitterFill />
           </a>
-          <a href="#" className="header__social-link">
+          <a href="instagram.com" className="header__social-link">
             <RiInstagramLine />
           </a>
         </div>
