@@ -1,0 +1,16 @@
+@use "../scss/" as *;
+
+.heart {
+  padding: 5px 6px 3px 6px;
+  border-radius: 100px;
+  background-color: white;
+  display: inline-block;
+}
+
+.heart--normal {
+  fill: $text-body;
+}
+
+.heart--favourite {
+  fill: red;
+}

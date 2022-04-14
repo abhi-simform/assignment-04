@@ -1,0 +1,19 @@
+@use "sass:math";
+
+@function rem($value) {
+  @return #{math.div($value, 16)}rem;
+}
+
+$breakpoints-down: (
+  "sm": "575.98px",
+  "md": "767.98px",
+  "lg": "991.98px",
+  "xl": "1199.98px",
+  "xxl": "1399.98px",
+);
+
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

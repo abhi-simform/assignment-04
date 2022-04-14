@@ -1,0 +1,195 @@
+@use "../scss/" as *;
+
+.hero-slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 50px;
+  align-items: stretch;
+  @include breakpoint(lg) {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+}
+
+.swiper-slide {
+  margin-inline: auto;
+  transition: all 300ms ease-in-out;
+  max-width: 1200px;
+  @include breakpoint(xl) {
+    max-width: 980px;
+  }
+  @include breakpoint(lg) {
+    max-width: 720px;
+  }
+  @include breakpoint(md) {
+    max-width: 540px;
+  }
+  @include breakpoint(sm) {
+    max-width: 360px;
+  }
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  transform: scale(0.9);
+  filter: blur(5px);
+}
+
+.slide-left {
+  padding: 50px;
+  background-color: $primary-color;
+  border-radius: 50px 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include breakpoint(lg) {
+    order: 2;
+    border-radius: 0 0 50px 50px;
+    width: 100%;
+    padding: 30px 40px;
+  }
+}
+
+.slide__tag {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.slide__title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: -0.04em;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  @include breakpoint(xl) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  @include breakpoint(lg) {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 60px;
+  }
+  @include breakpoint(md) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @include breakpoint(sm) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+.slide__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $text-body;
+  margin-bottom: 30px;
+  @include breakpoint(lg) {
+    margin-bottom: 20px;
+  }
+}
+
+.slide__info {
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.slide__info-bit {
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  svg {
+    height: 18px;
+    width: 18px;
+  }
+  span {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: $text-body;
+  }
+}
+
+.slide-left-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  .button {
+    padding: 20px 35px;
+  }
+  @include breakpoint(lg) {
+    margin-top: 30px;
+  }
+  @include breakpoint(sm) {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.hero__person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  p {
+    font-weight: 700;
+  }
+  span {
+    color: $text-body;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  svg {
+    height: 18px;
+    width: 18px;
+    line-height: 1;
+  }
+  a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  @include breakpoint(sm) {
+    display: inline-flex;
+  }
+}
+
+.slide-right {
+  border-radius: 0 50px 50px 0;
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+    object-fit: cover;
+    @include breakpoint(lg) {
+      border-radius: 50px 50px 0 0;
+    }
+  }
+  @include breakpoint(lg) {
+    order: 1;
+    aspect-ratio: 21/9;
+    border-radius: 50px 50px 0 0;
+  }
+}

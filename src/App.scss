@@ -1,0 +1,83 @@
+@use "scss/" as *;
+
+// Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: $font-body;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (max-width: 576px) {
+  * {
+    transition-delay: 10ms !important;
+  }
+}
+
+// Removing animations for people who don't prefer to see them
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Global styles
+.button {
+  padding: 20px 50px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+}
+
+.button-secondary {
+  background-color: $primary-color;
+  color: black;
+}

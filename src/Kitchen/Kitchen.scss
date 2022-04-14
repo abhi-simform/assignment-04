@@ -1,0 +1,86 @@
+@use "../scss/" as *;
+
+.kitchen-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  @include breakpoint(lg) {
+    gap: 20px;
+  }
+  @include breakpoint(md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kitchen-header {
+  text-align: left;
+  .section-title {
+    text-align: left;
+    @include breakpoint(md) {
+      text-align: center;
+    }
+  }
+  .section-text {
+    text-align: left;
+    @include breakpoint(md) {
+      text-align: center;
+    }
+  }
+  @include breakpoint(md) {
+    text-align: center;
+  }
+}
+
+.kitchen-left {
+  text-align: left;
+  .button {
+    display: inline-block;
+    margin-top: 70px;
+    @include breakpoint(md) {
+      margin-top: 20px;
+    }
+  }
+  @include breakpoint(md) {
+    text-align: center;
+  }
+}
+
+.kitchen-right {
+  text-align: center;
+  position: relative;
+}
+
+.kitchen-img-wrapper {
+  position: relative;
+  .kitchen__img {
+    width: 100%;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+    border-radius: 30px;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    right: 0;
+    top: 10%;
+    background-image: url("../assets/images/kitchen/kitchen-bg.svg");
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    z-index: -1;
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+}
