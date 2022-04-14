@@ -23,7 +23,6 @@ const App = () => {
       <MoreRecipe />
       <Subscribe />
       <Footer />
-      <div></div>
     </>
   );
 };
