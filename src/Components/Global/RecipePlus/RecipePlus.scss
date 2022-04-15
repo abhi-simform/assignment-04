@@ -1,0 +1,29 @@
+@use "../../../scss/" as *;
+
+.recipeplus-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  @include breakpoint(xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include breakpoint(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recipeplus-card {
+  background-color: white;
+  background-image: none;
+  padding-inline: 0;
+  .recipe__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.04em;
+  }
+}

@@ -1,28 +1,29 @@
 import React from "react";
-import Header from "./Header/Header";
-import Hero from "./Hero/Hero";
-import Category from "./Category/Category";
-import Recipe from "./Recipe/Recipe";
-import Kitchen from "./Kitchen/Kitchen";
-import SocialMedia from "./SocialMedia/SocialMedia";
-import MoreRecipe from "./MoreRecipe/MoreRecipe";
-import Subscribe from "./Subscribe/Subscribe";
-import Footer from "./Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./Components/Global/Header/Header";
+import Footer from "./Components/Global/Footer/Footer";
+import Home from "./Components/Home/Home";
+import Recipes from "./Components/Recipes/Recipes";
+import Blog from "./Components/Blog/Blog";
+import Contact from "./Components/Contact/Contact";
+import About from "./Components/About/About";
 
 import "./App.scss";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <Category />
-      <Recipe />
-      <Kitchen />
-      <SocialMedia />
-      <MoreRecipe />
-      <Subscribe />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 };

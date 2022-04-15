@@ -1,0 +1,63 @@
+@use "../../../scss/" as *;
+
+.form {
+  margin-top: 80px;
+}
+
+.form-top {
+  display: flex;
+  gap: 40px;
+  & > * {
+    width: 100%;
+  }
+  @include breakpoint(md) {
+    flex-direction: column;
+  }
+}
+
+.form__image {
+  background-image: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+  border-radius: 30px;
+  flex: 1 1 40%;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.form__content {
+  flex: 1 1 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  @include breakpoint(sm) {
+    flex-direction: column;
+  }
+  & > * {
+    width: 100%;
+    flex: 1 1 calc(50% - 40px);
+  }
+  label {
+    display: block;
+    color: $text-body;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  select,
+  textarea,
+  input {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    color: $text-body;
+    width: 100%;
+  }
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

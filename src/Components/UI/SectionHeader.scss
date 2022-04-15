@@ -1,0 +1,40 @@
+@use "../../scss/" as *;
+
+.section-header {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 25px;
+  @include breakpoint(xl) {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  @include breakpoint(lg) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @include breakpoint(lg) {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  @include breakpoint(lg) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+.section-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $text-body;
+  max-width: 700px;
+  margin: 0 auto;
+}
