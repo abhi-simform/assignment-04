@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../../UI/Section";
 import Container from "../../UI/Container";
 import SectionHeader from "../../UI/SectionHeader";
+import PageHeader from "../../UI/PageHeader";
 
 import "./Form.scss";
 
@@ -11,7 +12,7 @@ const Form = () => {
   return (
     <Section id="contact" className="form-section">
       <Container className="form-container">
-        <SectionHeader className="form-header" title="Contact us"></SectionHeader>
+        {/* <SectionHeader className="form-header" title="Contact us"></SectionHeader> */}
         <form className="form">
           <div className="form-top">
             <div className="form__image">
@@ -20,15 +21,15 @@ const Form = () => {
             <div className="form__content">
               <div className="name">
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" />
+                <input type="text" id="name" placeholder="Enter your name..." />
               </div>
               <div className="email">
                 <label htmlFor="email">Email</label>
-                <input type="email" id="email" />
+                <input type="email" id="email" placeholder="Your email address..." />
               </div>
               <div className="subject">
                 <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" />
+                <input type="text" id="subject" placeholder="Enter subject..." />
               </div>
               <div className="enquiry-select">
                 <label htmlFor="enquiry-select">Enquiry Type</label>
@@ -43,7 +44,7 @@ const Form = () => {
               </div>
               <div className="message">
                 <label htmlFor="message">Message</label>
-                <textarea id="message" rows="8"></textarea>
+                <textarea id="message" rows="8" placeholder="Enter your messages..."></textarea>
               </div>
             </div>
           </div>
