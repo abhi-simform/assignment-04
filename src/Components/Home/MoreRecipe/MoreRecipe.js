@@ -4,14 +4,14 @@ import SectionHeader from "../../UI/SectionHeader";
 import Container from "../../UI/Container";
 import RecipeCard from "../Recipe/RecipeCard";
 
-import more01 from "../../../assets/images/more/more01.jpg";
-import more02 from "../../../assets/images/more/more02.jpg";
-import more03 from "../../../assets/images/more/more03.jpg";
-import more04 from "../../../assets/images/more/more04.jpg";
-import more05 from "../../../assets/images/more/more05.jpg";
-import more06 from "../../../assets/images/more/more06.jpg";
-import more07 from "../../../assets/images/more/more07.jpg";
-import more08 from "../../../assets/images/more/more08.jpg";
+import more01 from "../../../assets/images/more/more01.webp";
+import more02 from "../../../assets/images/more/more02.webp";
+import more03 from "../../../assets/images/more/more03.webp";
+import more04 from "../../../assets/images/more/more04.webp";
+import more05 from "../../../assets/images/more/more05.webp";
+import more06 from "../../../assets/images/more/more06.webp";
+import more07 from "../../../assets/images/more/more07.webp";
+import more08 from "../../../assets/images/more/more08.webp";
 
 import "./MoreRecipe.scss";
 

@@ -4,10 +4,10 @@ import SectionHeader from "../../UI/SectionHeader";
 import Container from "../../UI/Container";
 import RecipeCard from "../../Home/Recipe/RecipeCard";
 
-import recipe01 from "../../../assets/images/recipe/recipe01.png";
-import recipe02 from "../../../assets/images/recipe/recipe02.png";
-import recipe03 from "../../../assets/images/recipe/recipe03.png";
-import recipe04 from "../../../assets/images/recipe/recipe04.png";
+import recipe01 from "../../../assets/images/recipe/recipe01.webp";
+import recipe02 from "../../../assets/images/recipe/recipe02.webp";
+import recipe03 from "../../../assets/images/recipe/recipe03.webp";
+import recipe04 from "../../../assets/images/recipe/recipe04.webp";
 
 import "./RecipePlus.scss";
 

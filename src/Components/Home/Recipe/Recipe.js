@@ -5,15 +5,15 @@ import SectionHeader from "../../UI/SectionHeader";
 import RecipeCard from "./RecipeCard";
 import "./Recipe.scss";
 
-import recipe01 from "../../../assets/images/recipe/recipe01.png";
-import recipe02 from "../../../assets/images/recipe/recipe02.png";
-import recipe03 from "../../../assets/images/recipe/recipe03.png";
-import recipe04 from "../../../assets/images/recipe/recipe04.png";
-import recipe05 from "../../../assets/images/recipe/recipe05.png";
-import recipe06 from "../../../assets/images/recipe/recipe06.png";
-import recipe07 from "../../../assets/images/recipe/recipe07.png";
-import recipe08 from "../../../assets/images/recipe/recipe08.png";
-import Ads from "../../../assets/images/recipe/Ads.png";
+import recipe01 from "../../../assets/images/recipe/recipe01.webp";
+import recipe02 from "../../../assets/images/recipe/recipe02.webp";
+import recipe03 from "../../../assets/images/recipe/recipe03.webp";
+import recipe04 from "../../../assets/images/recipe/recipe04.webp";
+import recipe05 from "../../../assets/images/recipe/recipe05.webp";
+import recipe06 from "../../../assets/images/recipe/recipe06.webp";
+import recipe07 from "../../../assets/images/recipe/recipe07.webp";
+import recipe08 from "../../../assets/images/recipe/recipe08.webp";
+import Ads from "../../../assets/images/recipe/Ads.webp";
 
 const recipeData = [
   {

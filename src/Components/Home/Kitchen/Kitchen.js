@@ -3,7 +3,7 @@ import Section from "../../UI/Section";
 import SectionHeader from "../../UI/SectionHeader";
 import Container from "../../UI/Container";
 
-import KitchenImage from "../../../assets/images/kitchen/kitchen-chef.png";
+import KitchenImage from "../../../assets/images/kitchen/kitchen-chef.webp";
 
 import "./Kitchen.scss";
 

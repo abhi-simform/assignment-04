@@ -55,7 +55,7 @@
     content: "";
     width: 25%;
     height: 60%;
-    background-image: url("../../../assets/images/sub-bg-2.png");
+    background-image: url("../../../assets/images/sub-bg-2.webp");
     border-radius: 0 0 60px 0;
     background-size: cover;
     @include breakpoint(lg) {
@@ -69,7 +69,7 @@
     content: "";
     width: 30%;
     height: 80%;
-    background-image: url("../../../assets/images/sub-bg-1.png");
+    background-image: url("../../../assets/images/sub-bg-1.webp");
     background-size: cover;
     border-radius: 0 0 0 60px;
     @include breakpoint(xl) {

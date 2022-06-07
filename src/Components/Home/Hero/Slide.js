@@ -1,9 +1,9 @@
 import React from "react";
 import { RiTimerFill } from "react-icons/ri";
 import { ImSpoonKnife } from "react-icons/im";
-import hero from "../../../assets/images/hero.jpg";
+import hero from "../../../assets/images/hero.webp";
 import hotrecipes from "../../../assets/images/hot-recipes.svg";
-import heroperson from "../../../assets/images/hero-hero.png";
+import heroperson from "../../../assets/images/hero-hero.webp";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 import "./Slide.scss";

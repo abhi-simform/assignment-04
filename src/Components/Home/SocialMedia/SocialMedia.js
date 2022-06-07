@@ -3,10 +3,10 @@ import Container from "../../UI/Container";
 import Section from "../../UI/Section";
 import SectionHeader from "../../UI/SectionHeader";
 import { BsInstagram } from "react-icons/bs";
-import Post1 from "../../../assets/images/post/post01.jpg";
-import Post2 from "../../../assets/images/post/post02.jpg";
-import Post3 from "../../../assets/images/post/post03.jpg";
-import Post4 from "../../../assets/images/post/post04.jpg";
+import Post1 from "../../../assets/images/post/post01.webp";
+import Post2 from "../../../assets/images/post/post02.webp";
+import Post3 from "../../../assets/images/post/post03.webp";
+import Post4 from "../../../assets/images/post/post04.webp";
 
 import "./SocialMedia.scss";
 
