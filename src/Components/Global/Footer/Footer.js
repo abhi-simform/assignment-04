@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="footer__bottom">
           <p className="footer__bottom--center">
-            © 2020 Flowbase. Powered by <a href="">Webflow</a>
+            © 2020 Flowbase. Powered by <a href="https://google.com">Webflow</a>
           </p>
           <div className="footer__social">
             <BsFacebook />

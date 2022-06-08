@@ -33,7 +33,7 @@ const SocialMedia = () => {
             <img src={Post4} alt="" className="post" />
           </div>
         </div>
-        <a href="#" className="button">
+        <a href="https://google.com" className="button">
           Visit Our Instagram <BsInstagram />{" "}
         </a>
       </Container>

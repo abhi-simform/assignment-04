@@ -17,7 +17,7 @@ const Kitchen = () => {
             title="Everyone can be a chef in their own kitchen"
             text="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
           />
-          <a href="" className="button">
+          <a href="https://google.com" className="button">
             Learn More
           </a>
         </div>

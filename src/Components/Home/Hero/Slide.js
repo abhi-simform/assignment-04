@@ -42,7 +42,7 @@ const Slide = () => {
             </div>
           </div>
           <div className="button">
-            <a href="">View Recipe</a>
+            <a href="https://google.com">View Recipe</a>
             <AiFillPlayCircle />
           </div>
         </div>
