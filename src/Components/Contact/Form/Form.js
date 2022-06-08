@@ -1,9 +1,6 @@
 import React from "react";
 import Section from "../../UI/Section";
 import Container from "../../UI/Container";
-import SectionHeader from "../../UI/SectionHeader";
-import PageHeader from "../../UI/PageHeader";
-
 import "./Form.scss";
 
 import formChef from "./form-chef.png";
